@@ -7,13 +7,11 @@ function salvarNome(){
     if (inputNomeUser.value){
         nomeUser = inputNomeUser.value;
         erroMsg.style.display = 'none';
-        window.location.href = '/menu.html'
+        window.location.href  += 'menu.html'
 
     } else {
         erroMsg.style.display = 'block';
     };
-
-    console.log(nomeUser)
 };
 
 function pegarMenuAtivo({ target }) {
