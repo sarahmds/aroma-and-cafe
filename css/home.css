@@ -1,0 +1,102 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: #F2E1D9;
+    font-family: "Amatic SC", sans-serif;
+}
+
+.index-input-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.index-input-itens label {
+    font-size: 2.25rem;
+}
+
+.index-input-itens div {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+.index-input-itens input {
+    border: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.index-input-itens input:focus {
+    outline: none;
+    background-color: #f7f7f7;
+}
+
+.index-input-itens input:hover {
+    background-color: #f7f7f7;
+}
+
+.index-input-itens div .erro-nome {
+    display: none;
+    margin-top: 16px;
+    grid-column: 1 / -1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+.index-input-itens button {
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.index-input-itens button:hover {
+    background-color: #f7f7f7;
+}
+
+#home main {
+    margin-bottom: 200px;
+}
+
+#home footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.social-medias {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+.social-medias span {
+    cursor: pointer;
+}
+
+.home-servicos {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.home-servicos a {
+    font-size: 1.5rem;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 8px;
+}
+
+.home-servicos a:hover {
+    transform: translateY(-10px);
+}
+

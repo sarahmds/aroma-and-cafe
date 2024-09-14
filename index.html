@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/svg/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
+    <title>Aroma & Café</title>
+</head>
+<body id="home">
+    <main>
+        <picture>
+            <img src="./assets/img-inicial.png" alt="Aroma & Café - Logo">
+        </picture>
+        <div class="index-input-itens">
+            <label for="nome-usuario">Nome:</label>
+
+            <div>
+                <input type="text" id="nome-usuario" placeholder="Seu pedido será entregue por esse nome">
+                <button onclick="salvarNome()">
+                    <img src="./assets/svg/seta.svg" alt="seta">
+                </button>
+                <p class="erro-nome">Erro. Informe seu nome!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-medias">
+            <span>
+                <img src="./assets/svg/facebook.svg" alt="">
+            </span>
+            <span>
+                <img src="./assets/svg/instagram.svg" alt="">
+            </span>
+            <span>
+                <img src="./assets/svg/whatsapp.svg" alt="">
+            </span>
+        </div>
+
+        <div class="home-servicos">
+            <a href="/">Sobre</a>
+            <a href="/">Ajuda</a>
+            <a href="/">Termos</a>
+            <a href="/">Localizações</a>
+            <a href="/">Carregamento de contatos e não usuários</a>
+            <a href="/">Privacidade</a>
+        </div>
+
+        <p>© 2024 Convertio ltd. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

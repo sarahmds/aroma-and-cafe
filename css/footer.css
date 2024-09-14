@@ -1,0 +1,70 @@
+.footer {
+    max-width: 100%;
+    width: 100%;
+    background-color: #A36A54;
+}
+
+.primeira-sec-footer {
+    padding: 24px;
+    margin-bottom: 150px;
+}
+
+.footer .servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.social-medias {
+    justify-self: end;
+}
+
+.social-medias img {
+    fill: #fff;
+}
+
+.servicos a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.segundo-sec-footer {
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 24px;
+    background: linear-gradient(45deg, #CF9D82, #A36A54);
+}
+
+.segundo-sec-footer h1 {
+    color: #ffffff;
+    font-family: "Texturina", serif;
+    font-size: 3.2rem;
+}
+
+.segundo-sec-footer span {
+    justify-self: end;
+}
+
+.proxima-pag-button {
+    font-size: 2rem;
+    font-family: "Texturina", serif;
+    padding: 16px 80px;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.proxima-pag-button:hover {
+    background-color: #CF9D82;
+    color: #fff;
+}
+

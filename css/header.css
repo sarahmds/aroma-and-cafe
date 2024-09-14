@@ -1,0 +1,9 @@
+#menu header {
+    width: 100%;
+    background: linear-gradient(45deg, #F2E1D9, #EFDDD4, #A36A54);
+    margin-bottom: 64px;
+}
+
+#menu header img {
+    height: 150px;
+}
