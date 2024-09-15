@@ -11,6 +11,8 @@
 }
 
 #menu main {
+    padding-right: 12px;
+    padding-left: 12px;
     max-width: 1600px;
     width: 100%;
 }
@@ -25,7 +27,7 @@
     font-family: inherit;
     font-size: 2rem;
     padding: 16px 80px;
-    border: none;
+    border: 1px solid #000;
     background-color: #A36A54;
     color: #fff;
     cursor: pointer;
@@ -45,7 +47,83 @@
     margin-bottom: 64px;
 }
 
+.menu-item {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    border: 1px solid;
+    box-shadow: 4px 4px 0 rgb(207, 157, 130);
+}
+
+.menu-detalhes {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr max-content;
+    padding: 16px;
+}
+
+.menu-preco {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.menu-detalhes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.menu-detalhes p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.menu-detalhes span:last-of-type {
+    width: max-content;
+    align-self: end;
+}
+
+.menu-detalhes input {
+    padding: 8px;
+    font-size: 1rem;
+    width: 100px;
+}
+
+.menu-img {
+    object-fit: cover;
+    object-position: center;
+    width: 250px;
+    height: 250px;
+}
+
 .botao-ativo {
     color: #000 !important;
     background-color: #CF9D82 !important;
+}
+
+@media (width <= 1250px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .escolhas-menu {
+        flex-wrap: wrap;
+        justify-content: stretch;
+        gap: 4px;
+    }
+
+    .escolhas-menu span, button {
+        width: 100%;
+    }
+}
+
+@media (width <= 650px) {
+    .menu-item {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-img {
+        width: 100%;
+    }
 }
