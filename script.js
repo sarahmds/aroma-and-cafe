@@ -53,7 +53,7 @@ function mostrarMenu(target){
 
         menuCombos.style.display = 'grid';
     }
-}
+};
 
 function esconderMenu(target){
     if (target.id === 'cafes'){
@@ -79,12 +79,33 @@ function esconderMenu(target){
 
         menuCombos.style.display = 'none';
     }
-}
+};
 
-window.onload = function() {
-    var audio = document.getElementById('musica');
-    audio.play().catch(function(error) {
-        // Lida com o caso onde a reprodução automática não é permitida
-        console.log('Erro ao tentar tocar a música:', error);
+function calcularComprovante(){
+    const menuInputs = document.querySelectorAll('#qnt-item');
+    let itemNome
+    let itemPreco
+    let itemQnt
+    let totalCompra = 0;
+
+    menuInputs.forEach((elementoInput) => {
+        if (elementoInput.value > 0){
+
+            const container = elementoInput.parentElement.parentElement
+
+            itemNome = container.querySelector('span h2').textContent;
+            itemPreco = container.querySelector('.menu-preco').textContent;
+            console.log(itemPreco)
+            itemQnt = parseInt(elementoInput.value);
+            itemPreco = parseFloat(itemPreco.replace('R$', '')) * itemQnt
+
+            console.log(`Nome: ${itemNome}`);
+            console.log(`Valor: R$ ${itemPreco}`);
+            console.log(`Quantidade: ${itemQnt}`);
+
+            totalCompra += itemPreco;
+        };
     });
+
+    console.log(`Total da compra: R$ ${totalCompra}`)
 };
