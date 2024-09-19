@@ -70,6 +70,11 @@
     color: #fff;
 }
 
+.proxima-pag-button a {
+    text-decoration: none;
+    color: #000;
+}
+
 @media (width <= 700px) {
     .segundo-sec-footer h1 {
         font-size: 2.5rem;
